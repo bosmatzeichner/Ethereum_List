@@ -1,6 +1,6 @@
-## Clone the project.
+### Clone the project.
 
-## Run
+### Run
 
 1. yarn
 
