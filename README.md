@@ -1,5 +1,5 @@
-Clone the project.
-Run:
-#yarn
-#yarn start
-yarn electron
+# Clone the project.
+# Run:
+## yarn
+## yarn start
+## yarn electron
