@@ -104,7 +104,7 @@ function App() {
           className="Input"
           value={ethereumAddress}
           placeholder={
-            "Please enter a valid url with/without account address, for example: https://api.etherscan.io/api "
+            "Please enter a valid url with the account address, for example: https://api.etherscan.io/api?address=0x38cd7db12edc7724a6a403c1a63d3c12682fd687"
           }
           onChange={(e) => setEthereumAddress(e.target.value)}
         />
@@ -148,18 +148,20 @@ interface ApiParams {
   sort?: string;
   apikey?: string;
 }
+
+const params: ApiParams = {
+  module: "account",
+  action: "txlist",
+  address: "0x38cd7db12edc7724a6a403c1a63d3c12682fd687",
+  page: 1,
+  offset: PageSize,
+  sort: "desc",
+  apikey: "T1JX12UU9U5QIFKFY3QZK7GDVXIJCMBQKH",
+};
+
 function fetchData(ethereumAddress: string, page: number): Promise<any> {
   //https://api.etherscan.io/api
-  const params: ApiParams = {
-    module: "account",
-    action: "txlist",
-    address: "0x38cd7db12edc7724a6a403c1a63d3c12682fd687",
-    page,
-    offset: PageSize,
-    sort: "desc",
-    apikey: "T1JX12UU9U5QIFKFY3QZK7GDVXIJCMBQKH",
-  };
-
+  params.page = page;
   if (ethereumAddress.includes("address")) {
     delete params.address;
   }
