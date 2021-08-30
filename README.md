@@ -6,11 +6,11 @@
 
 3. yarn electron
 
-![image](https://user-images.githubusercontent.com/28141226/131406018-db884253-3d7d-4f99-b5ca-66a55fcf3fca.png)
+![image](https://user-images.githubusercontent.com/28141226/131407567-7f742e15-a18e-4717-902e-e7cce2570cf7.png)
 
-Enter your url to see all the transactions.
+Enter your address to see all the transactions.
 
-example: https://api.etherscan.io/api?address=0x38cd7db12edc7724a6a403c1a63d3c12682fd687
+example: 0x38cd7db12edc7724a6a403c1a63d3c12682fd687
 
 ![image](https://user-images.githubusercontent.com/28141226/131406391-994fb8dd-848a-4a8f-ab78-7d91f6840435.png)
 
